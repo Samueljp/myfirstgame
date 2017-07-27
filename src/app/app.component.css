@@ -1,0 +1,156 @@
+.hexagon {
+  position: relative;
+  width: 100px; 
+  height: 57.74px;
+  margin: 28.87px 0;
+  border-left: solid 2px #333333;
+  border-right: solid 2px #333333;
+}
+
+.city {
+  position: relative;
+  width: 100px; 
+  height: 57.74px;
+  margin: 28.87px 0;
+  border-left: solid 2px #333333;
+  border-right: solid 2px #333333;
+  background-size: auto 110.8513px;
+  background-image: url(../../res/City.jpg);
+  background-position: center;
+}
+
+.mountain {
+  position: relative;
+  width: 100px; 
+  height: 57.74px;
+  margin: 28.87px 0;
+  border-left: solid 2px #333333;
+  border-right: solid 2px #333333;
+  background-size: auto 110.8513px;
+  background-image: url(../../res/Mountain-JW.jpg);
+  background-position: center;
+}
+
+.forest {
+  position: relative;
+  width: 100px; 
+  height: 57.74px;
+  margin: 28.87px 0;
+  border-left: solid 2px #333333;
+  border-right: solid 2px #333333;
+  background-size: auto 110.8513px;
+  background-image: url(../../res/Forest-JW.jpg);
+  background-position: center;
+}
+
+.grass {
+  position: relative;
+  width: 100px; 
+  height: 57.74px;
+  margin: 28.87px 0;
+  border-left: solid 2px #333333;
+  border-right: solid 2px #333333;
+  background-size: auto 110.8513px;
+  background-image: url(../../res/Grass-JW.jpg);
+  background-position: center;
+}
+
+.pradera {
+  position: relative;
+  width: 100px; 
+  height: 57.74px;
+  margin: 28.87px 0;
+  border-left: solid 2px #333333;
+  border-right: solid 2px #333333;
+  background-size: auto 110.8513px;
+  background-image: url(../../res/Pradera-JW.jpg);
+  background-position: center;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 70.71px;
+  height: 70.71px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 12.64px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 96.0000px;
+  height: 55.42562584220408px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-27.7128px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-27.7128px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-27.7128px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -35.3553px;
+  border-top: solid 2.8284px #333333;
+  border-right: solid 2.8284px #333333;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -35.3553px;
+  border-bottom: solid 2.8284px #333333;
+  border-left: solid 2.8284px #333333;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 1.1547px;
+  left: 0;
+  width: 96.0000px;
+  height: 55.4256px;
+  z-index: 2;
+  background: inherit;
+}
+.fila_impar {
+  margin-left: 55px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
